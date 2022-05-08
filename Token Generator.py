@@ -19,7 +19,6 @@ Spinner()
  
 banner = (Fore.WHITE +Fore.BLUE +"                         ["+Fore.WHITE +Fore.BLUE +"+"+Fore.WHITE +Fore.BLUE +"]"+ Fore.WHITE +Fore.BLUE +"-------------------------------------------------------"+ Fore.WHITE +Fore.BLUE +"["+ Fore.WHITE +Fore.BLUE +"+"+ Fore.WHITE +Fore.BLUE +"]\n"+ 
 Fore.WHITE +Fore.BLUE +'''\n  
-
 ██████████████████████████████████████▀███████████████
 █─▄─▄─█─▄▄─█▄─█─▄█▄─▄▄─█▄─▀█▄─▄███─▄▄▄▄█▄─▄▄─█▄─▀█▄─▄█
 ███─███─██─██─▄▀███─▄█▀██─█▄▀─████─██▄─██─▄█▀██─█▄▀─██
@@ -61,7 +60,7 @@ if opcion=='1':
             pass
     pass
 if opcion=='2':
- from requests import get post
+ from requests import get,post
  from random import randint
 
 def variant1(token):
