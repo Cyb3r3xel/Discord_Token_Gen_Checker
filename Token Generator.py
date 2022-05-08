@@ -19,10 +19,12 @@ Spinner()
  
 banner = (Fore.WHITE +Fore.BLUE +"                         ["+Fore.WHITE +Fore.BLUE +"+"+Fore.WHITE +Fore.BLUE +"]"+ Fore.WHITE +Fore.BLUE +"-------------------------------------------------------"+ Fore.WHITE +Fore.BLUE +"["+ Fore.WHITE +Fore.BLUE +"+"+ Fore.WHITE +Fore.BLUE +"]\n"+ 
 Fore.WHITE +Fore.BLUE +'''\n  
-██████████████████████████████████████▀███████████████
-█─▄─▄─█─▄▄─█▄─█─▄█▄─▄▄─█▄─▀█▄─▄███─▄▄▄▄█▄─▄▄─█▄─▀█▄─▄█
-███─███─██─██─▄▀███─▄█▀██─█▄▀─████─██▄─██─▄█▀██─█▄▀─██
-▀▀▄▄▄▀▀▄▄▄▄▀▄▄▀▄▄▀▄▄▄▄▄▀▄▄▄▀▀▄▄▀▀▀▄▄▄▄▄▀▄▄▄▄▄▀▄▄▄▀▀▄▄▀ \n\n'''+ Fore.RESET + Fore.WHITE +Fore.BLUE +"                         ["+Fore.WHITE +Fore.BLUE +"+"+Fore.WHITE +Fore.BLUE +"]"+ Fore.WHITE +Fore.BLUE +"-------------------------------------------------------"+ Fore.WHITE +Fore.BLUE +"["+ Fore.WHITE +Fore.BLUE +"+"+ Fore.WHITE +Fore.BLUE +"]\n")
+
+
+██████████████████████████████████████▀█████████████████████████████████████████████████████████
+█─▄─▄─█─▄▄─█▄─█─▄█▄─▄▄─█▄─▀█▄─▄███─▄▄▄▄█▄─▄▄─█▄─▀█▄─▄███─▄▄▄─█─█─█▄─▄▄─█─▄▄▄─█▄─█─▄█▄─▄▄─█▄─▄▄▀█
+███─███─██─██─▄▀███─▄█▀██─█▄▀─████─██▄─██─▄█▀██─█▄▀─████─███▀█─▄─██─▄█▀█─███▀██─▄▀███─▄█▀██─▄─▄█
+▀▀▄▄▄▀▀▄▄▄▄▀▄▄▀▄▄▀▄▄▄▄▄▀▄▄▄▀▀▄▄▀▀▀▄▄▄▄▄▀▄▄▄▄▄▀▄▄▄▀▀▄▄▀▀▀▄▄▄▄▄▀▄▀▄▀▄▄▄▄▄▀▄▄▄▄▄▀▄▄▀▄▄▀▄▄▄▄▄▀▄▄▀▄▄▀ \n\n'''+ Fore.RESET + Fore.WHITE +Fore.BLUE +"                         ["+Fore.WHITE +Fore.BLUE +"+"+Fore.WHITE +Fore.BLUE +"]"+ Fore.WHITE +Fore.BLUE +"-------------------------------------------------------"+ Fore.WHITE +Fore.BLUE +"["+ Fore.WHITE +Fore.BLUE +"+"+ Fore.WHITE +Fore.BLUE +"]\n")
  
 os.system("cls")
 count = 0
@@ -31,12 +33,22 @@ current_path = os.path.dirname(os.path.realpath(__file__))
 print(Fore.WHITE +Fore.BLUE +"                         ["+Fore.WHITE +Fore.BLUE +"+"+Fore.WHITE +Fore.BLUE +"]"+ Fore.WHITE +Fore.BLUE +"-------------------------------------------------------"+ Fore.WHITE +Fore.BLUE +"["+ Fore.WHITE +Fore.BLUE +"+"+ Fore.WHITE +Fore.BLUE +"]")
 print(Fore.WHITE +Fore.BLUE +"                                         Welcome to "+Fore.WHITE+" Token-Gen "+Fore.WHITE+"- 2022 -")
 print(Fore.WHITE +Fore.BLUE +"                                         [1] "+Fore.WHITE+"Token Generator")
-print(Fore.WHITE +Fore.BLUE +"                                         [2] "+Fore.WHITE+"Token Checker(Checks all tokens you generated)")
-print(Fore.WHITE +Fore.BLUE +"                                         [3] "+Fore.WHITE+"Credits")
-print(Fore.WHITE +Fore.BLUE +"                                         [4] "+Fore.WHITE+"Exit")
+print(Fore.WHITE +Fore.BLUE +"                                         [2] "+Fore.WHITE+"Generated Tokens Checker")
+print(Fore.WHITE +Fore.BLUE +"                                         [3] "+Fore.WHITE+"Manual Token Checker(Copy & Paste)")
+print(Fore.WHITE +Fore.BLUE +"                                         [4] "+Fore.WHITE+"Credits")
+print(Fore.WHITE +Fore.BLUE +"                                         [5] "+Fore.WHITE+"Exit")
 print(Fore.WHITE +Fore.BLUE +"                         ["+Fore.WHITE +Fore.BLUE +"+"+Fore.WHITE +Fore.BLUE +"]"+ Fore.WHITE +Fore.BLUE +"-------------------------------------------------------"+ Fore.WHITE +Fore.BLUE +"["+ Fore.WHITE +Fore.BLUE +"+"+ Fore.WHITE +Fore.BLUE +"]")
 opcion = input("\nChoice: ")
 if opcion=='1':
+  print(fr"""
+
+██████████████████████████████████████▀███████████████
+█─▄─▄─█─▄▄─█▄─█─▄█▄─▄▄─█▄─▀█▄─▄███─▄▄▄▄█▄─▄▄─█▄─▀█▄─▄█
+███─███─██─██─▄▀███─▄█▀██─█▄▀─████─██▄─██─▄█▀██─█▄▀─██
+▀▀▄▄▄▀▀▄▄▄▄▀▄▄▀▄▄▀▄▄▄▄▄▀▄▄▄▀▀▄▄▀▀▀▄▄▄▄▄▀▄▄▄▄▄▀▄▄▄▀▀▄▄▀
+                                                                                           {Fore.CYAN}
+{Fore.RESET} 
+""")
     os.system("cls")
     print(banner)
     cantidad = input("\nAmount to generate: ")
@@ -60,6 +72,15 @@ if opcion=='1':
             pass
     pass
 if opcion=='2':
+ print(fr"""
+
+██████████████████████████████████████████████████████████████████████████
+█─▄─▄─█─▄▄─█▄─█─▄█▄─▄▄─█▄─▀█▄─▄███─▄▄▄─█─█─█▄─▄▄─█─▄▄▄─█▄─█─▄█▄─▄▄─█▄─▄▄▀█
+███─███─██─██─▄▀███─▄█▀██─█▄▀─████─███▀█─▄─██─▄█▀█─███▀██─▄▀███─▄█▀██─▄─▄█
+▀▀▄▄▄▀▀▄▄▄▄▀▄▄▀▄▄▀▄▄▄▄▄▀▄▄▄▀▀▄▄▀▀▀▄▄▄▄▄▀▄▀▄▀▄▄▄▄▄▀▄▄▄▄▄▀▄▄▀▄▄▀▄▄▄▄▄▀▄▄▀▄▄▀
+                                                                                           {Fore.CYAN}Copy & Paste Your Tokens To Check
+{Fore.RESET} 
+""")
  from requests import get,post
  from random import randint
 
@@ -104,6 +125,8 @@ if __name__ == "__main__":
     except:
         input('Can`t Open "Generated.txt" File!')
 if opcion=='3':
+ 
+if opcion=='4':
     os.system("cls")
     print(Fore.WHITE +Fore.BLUE +"                         ["+Fore.WHITE +Fore.BLUE +"+"+Fore.WHITE +Fore.BLUE +"]"+ Fore.WHITE +Fore.BLUE +"-------------------------------------------------------"+ Fore.WHITE +Fore.BLUE +"["+ Fore.WHITE +Fore.BLUE +"+"+ Fore.WHITE +Fore.BLUE +"]")
     print(Fore.WHITE +Fore.BLUE +"                                         Token-Gen"+Fore.WHITE+" Made by "+Fore.BLUE+"???")
@@ -119,7 +142,7 @@ if opcion=='3':
     time.sleep(2)
     sys.exit()
     pass
-if opcion=='4':
+if opcion=='5':
     os.system("cls")
     print(Fore.WHITE +Fore.BLUE +"                         ["+Fore.WHITE +Fore.BLUE +"+"+Fore.WHITE +Fore.BLUE +"]"+ Fore.WHITE +Fore.BLUE +"-------------------------------------------------------"+ Fore.WHITE +Fore.BLUE +"["+ Fore.WHITE +Fore.BLUE +"+"+ Fore.WHITE +Fore.BLUE +"]")
     print(Fore.BLUE +Fore.BLUE +"                                                   Closing!")
