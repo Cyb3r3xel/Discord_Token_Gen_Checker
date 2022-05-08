@@ -6,7 +6,7 @@ import colorama
 from colorama import Fore, init, Back, Style
 from datetime import date
  
-os.system("title [Token Gen] Made by ! Cyber™#1996")
+os.system("title [Token Gen] Made by ???")
  
 def Spinner():
     l = ['|', '/', '-', '\\']
@@ -30,8 +30,8 @@ count = 0
 current_path = os.path.dirname(os.path.realpath(__file__))
     
 print(Fore.WHITE +Fore.BLUE +"                         ["+Fore.WHITE +Fore.BLUE +"+"+Fore.WHITE +Fore.BLUE +"]"+ Fore.WHITE +Fore.BLUE +"-------------------------------------------------------"+ Fore.WHITE +Fore.BLUE +"["+ Fore.WHITE +Fore.BLUE +"+"+ Fore.WHITE +Fore.BLUE +"]")
-print(Fore.WHITE +Fore.BLUE +"                                         Welcome to "+Fore.WHITE+" Token-Gen "+Fore.WHITE+"- 2021 -")
-print(Fore.WHITE +Fore.BLUE +"                                         [1] "+Fore.WHITE+"Token Generator(super fast!)")
+print(Fore.WHITE +Fore.BLUE +"                                         Welcome to "+Fore.WHITE+" Token-Gen "+Fore.WHITE+"- 2022 -")
+print(Fore.WHITE +Fore.BLUE +"                                         [1] "+Fore.WHITE+"Token Generator")
 print(Fore.WHITE +Fore.BLUE +"                                         [2] "+Fore.WHITE+"Token Checker(Checks all tokens you generated)")
 print(Fore.WHITE +Fore.BLUE +"                                         [3] "+Fore.WHITE+"Credits")
 print(Fore.WHITE +Fore.BLUE +"                                         [4] "+Fore.WHITE+"Exit")
@@ -54,7 +54,7 @@ if opcion=='1':
             os.system("cls")
             print(Fore.WHITE +Fore.BLUE +"                         ["+Fore.WHITE +Fore.BLUE +"+"+Fore.WHITE +Fore.BLUE +"]"+ Fore.WHITE +Fore.BLUE +"-------------------------------------------------------"+ Fore.WHITE +Fore.BLUE +"["+ Fore.WHITE +Fore.BLUE +"+"+ Fore.WHITE +Fore.BLUE +"]")
             print(Fore.BLUE +Fore.BLUE +"                                                   Closing!")
-            print(Fore.GREEN +Fore.BLUE +"                                               Have a good day :D")
+            print(Fore.GREEN +Fore.BLUE +"                                               Have a good day!")
             print(Fore.WHITE +Fore.BLUE +"                         ["+Fore.WHITE +Fore.BLUE +"+"+Fore.WHITE +Fore.BLUE +"]"+ Fore.WHITE +Fore.BLUE +"-------------------------------------------------------"+ Fore.WHITE +Fore.BLUE +"["+ Fore.WHITE +Fore.BLUE +"+"+ Fore.WHITE +Fore.BLUE +"]")
             time.sleep(2)
             sys.exit()
@@ -83,15 +83,15 @@ pass
 if opcion=='3':
     os.system("cls")
     print(Fore.WHITE +Fore.BLUE +"                         ["+Fore.WHITE +Fore.BLUE +"+"+Fore.WHITE +Fore.BLUE +"]"+ Fore.WHITE +Fore.BLUE +"-------------------------------------------------------"+ Fore.WHITE +Fore.BLUE +"["+ Fore.WHITE +Fore.BLUE +"+"+ Fore.WHITE +Fore.BLUE +"]")
-    print(Fore.WHITE +Fore.BLUE +"                                         Token-Gen"+Fore.WHITE+" Made by "+Fore.BLUE+"! Cyber™#1996")
-    print(Fore.WHITE +Fore.BLUE +"                                         [Discord] "+Fore.BLUE+"! ! Cyber™#1996")
+    print(Fore.WHITE +Fore.BLUE +"                                         Token-Gen"+Fore.WHITE+" Made by "+Fore.BLUE+"???")
+    print(Fore.WHITE +Fore.BLUE +"                                         [Discord] "+Fore.BLUE+"???")
     print(Fore.WHITE +Fore.BLUE +"                                         [Server] "+Fore.BLUE+"Soon")
     print(Fore.WHITE +Fore.BLUE +"                         ["+Fore.WHITE +Fore.BLUE +"+"+Fore.WHITE +Fore.BLUE +"]"+ Fore.WHITE +Fore.BLUE +"-------------------------------------------------------"+ Fore.WHITE +Fore.BLUE +"["+ Fore.WHITE +Fore.BLUE +"+"+ Fore.WHITE +Fore.BLUE +"]")
     input(Fore.BLUE +Fore.BLUE +"\nEnter to exit")
     os.system("cls")
     print(Fore.WHITE +Fore.BLUE +"                         ["+Fore.WHITE +Fore.BLUE +"+"+Fore.WHITE +Fore.BLUE +"]"+ Fore.WHITE +Fore.BLUE +"-------------------------------------------------------"+ Fore.WHITE +Fore.BLUE +"["+ Fore.WHITE +Fore.BLUE +"+"+ Fore.WHITE +Fore.BLUE +"]")
     print(Fore.BLUE +Fore.BLUE +"                                                   Closing!")
-    print(Fore.GREEN +Fore.BLUE +"                                               Have a good day :D")
+    print(Fore.GREEN +Fore.BLUE +"                                               Have a good day!")
     print(Fore.WHITE +Fore.BLUE +"                         ["+Fore.WHITE +Fore.BLUE +"+"+Fore.WHITE +Fore.BLUE +"]"+ Fore.WHITE +Fore.BLUE +"-------------------------------------------------------"+ Fore.WHITE +Fore.BLUE +"["+ Fore.WHITE +Fore.BLUE +"+"+ Fore.WHITE +Fore.BLUE +"]")
     time.sleep(2)
     sys.exit()
