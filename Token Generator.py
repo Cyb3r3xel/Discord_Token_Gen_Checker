@@ -31,7 +31,7 @@ print(Fore.WHITE +Fore.BLUE +"                         ["+Fore.WHITE +Fore.BLUE 
 print(Fore.WHITE +Fore.BLUE +"                                         Welcome to "+Fore.WHITE+" Token-Gen "+Fore.WHITE+"- 2022 -")
 print(Fore.WHITE +Fore.BLUE +"                                         [1] "+Fore.WHITE+"Token Generator")
 print(Fore.WHITE +Fore.BLUE +"                                         [2] "+Fore.WHITE+"Token Checker(Checks all tokens you generated)")
-print(Fore.WHITE +Fore.BLUE +"                                         [3] "+Fore.WHITE+"Credits")
+print(Fore.WHITE +Fore.BLUE +"                                         [3] "+Fore.WHITE+"Manual Checker(Copy & Paste)")
 print(Fore.WHITE +Fore.BLUE +"                                         [4] "+Fore.WHITE+"Exit")
 print(Fore.WHITE +Fore.BLUE +"                         ["+Fore.WHITE +Fore.BLUE +"+"+Fore.WHITE +Fore.BLUE +"]"+ Fore.WHITE +Fore.BLUE +"-------------------------------------------------------"+ Fore.WHITE +Fore.BLUE +"["+ Fore.WHITE +Fore.BLUE +"+"+ Fore.WHITE +Fore.BLUE +"]")
 opcion = input("\nChoice: ")
@@ -58,8 +58,17 @@ if opcion=='1':
             sys.exit()
             pass
     pass
+
 if opcion=='2':
- from requests import get, post
+  print(fr"""
+ 
+██████████████████████████████████████████████████████████████████████████
+█─▄─▄─█─▄▄─█▄─█─▄█▄─▄▄─█▄─▀█▄─▄███─▄▄▄─█─█─█▄─▄▄─█─▄▄▄─█▄─█─▄█▄─▄▄─█▄─▄▄▀█
+███─███─██─██─▄▀███─▄█▀██─█▄▀─████─███▀█─▄─██─▄█▀█─███▀██─▄▀███─▄█▀██─▄─▄█
+▀▀▄▄▄▀▀▄▄▄▄▀▄▄▀▄▄▀▄▄▄▄▄▀▄▄▄▀▀▄▄▀▀▀▄▄▄▄▄▀▄▀▄▀▄▄▄▄▄▀▄▄▄▄▄▀▄▄▀▄▄▀▄▄▄▄▄▀▄▄▀▄▄▀
+                                                                                           
+""")
+  from requests import get, post
 from random import randint
 
 def variant1(token):
@@ -102,7 +111,6 @@ if __name__ == "__main__":
         input('Press Enter For Exit...')
     except:
         input('Press Enter For The Manual Checker!')
-
 if opcion=='3':
  import json
 import math
@@ -138,10 +146,11 @@ class Checker:
     def main(self):
         cls()
         print(fr"""
-   ___  _                     __  ______     __              _______           __                  ___ 
-  / _ \(_)__ _______  _______/ / /_  __/__  / /_____ ___    / ___/ /  ___ ____/ /_____ ____  _  __|_  |
- / // / (_-</ __/ _ \/ __/ _  /   / / / _ \/  '_/ -_) _ \  / /__/ _ \/ -_) __/  '_/ -_) __/ | |/ / __/ 
-/____/_/___/\__/\___/_/  \_,_/   /_/  \___/_/\_\\__/_//_/  \___/_//_/\__/\__/_/\_\\__/_/    |___/____/ 
+  
+██████████████████████████████████████████████████████████████████████████
+█─▄─▄─█─▄▄─█▄─█─▄█▄─▄▄─█▄─▀█▄─▄███─▄▄▄─█─█─█▄─▄▄─█─▄▄▄─█▄─█─▄█▄─▄▄─█▄─▄▄▀█
+███─███─██─██─▄▀███─▄█▀██─█▄▀─████─███▀█─▄─██─▄█▀█─███▀██─▄▀███─▄█▀██─▄─▄█
+▀▀▄▄▄▀▀▄▄▄▄▀▄▄▀▄▄▀▄▄▄▄▄▀▄▄▄▀▀▄▄▀▀▀▄▄▄▄▄▀▄▀▄▀▄▄▄▄▄▀▄▄▄▄▄▀▄▄▀▄▄▀▄▄▄▄▄▀▄▄▀▄▄▀
                                                                                            
 """)
 
