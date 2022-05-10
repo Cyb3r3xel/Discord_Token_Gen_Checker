@@ -1,3 +1,4 @@
-# token_generator
-This is a generator that creates tokens for discord, it was coded in python.
-To use it, install the file, extract the zip folder, and run in cmd.
+Setup Tutorial:
+1.)pip install -r Requirments.txt
+2.)python Discord-Token-Generator-Checker
+(Generated Tokens Are Saved In Generated.txt
