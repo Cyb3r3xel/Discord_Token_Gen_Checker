@@ -154,7 +154,8 @@ class Checker:
                                                                                            
 """)
 
-        print(f"{Fore.RESET}[{Fore.CYAN}1{Fore.RESET}] Enter token")
+         print(f"{Fore.RESET}[{Fore.CYAN}1{Fore.RESET}] Enter token")
+        print(f"{Fore.RESET}[{Fore.CYAN}2{Fore.RESET}] Check file(Drag & Drop Or File Name")
         print()
         check_type = input(f"{Fore.CYAN}>{Fore.RESET}Select An Option{Fore.CYAN}:{Fore.RESET} ")
 
@@ -163,8 +164,26 @@ class Checker:
             self.parse_tokens(input(f"{Fore.CYAN}>{Fore.RESET}Enter tokens{Fore.CYAN}:{Fore.RESET} "))
         elif "2" in check_type:
             print()
-          
- 
+            token_file_name = input(
+                f"{Fore.CYAN}>{Fore.RESET}Drag The File Or Type The Files Name"
+                f" (supported types: txt, html, json){Fore.CYAN}:{Fore.RESET} "
+            )
+            if not os.path.exists(token_file_name):
+                fast_exit(f"{token_file_name} directory not exist.")
+
+            if os.path.isfile(token_file_name):
+                with open(token_file_name, "r", errors="ignore") as file:
+                    self.parse_tokens(file.read())
+            else:
+                for path in pathlib.Path(token_file_name).rglob("*.*"):
+                    if path.suffix in self.file_types:
+                        try:
+                            with open(path, "r", errors="ignore") as file:
+                                self.parse_tokens(file.read())
+                        except Exception as error:
+                            print(error)
+                self.tokens_parsed = list(dict.fromkeys(self.tokens_parsed))
+
         else:
             fast_exit("Invalid Option.")
 
