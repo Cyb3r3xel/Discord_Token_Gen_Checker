@@ -154,7 +154,7 @@ class Checker:
                                                                                            
 """)
 
-         print(f"{Fore.RESET}[{Fore.CYAN}1{Fore.RESET}] Enter token")
+        print(f"{Fore.RESET}[{Fore.CYAN}1{Fore.RESET}] Enter token")
         print(f"{Fore.RESET}[{Fore.CYAN}2{Fore.RESET}] Check file(Drag & Drop Or File Name")
         print()
         check_type = input(f"{Fore.CYAN}>{Fore.RESET}Select An Option{Fore.CYAN}:{Fore.RESET} ")
